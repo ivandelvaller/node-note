@@ -1,12 +1,8 @@
-// Imported modules.
-const notes = require('./notes')
-const yargs = require('yargs')
+const notes = require('./notes');
+const yargs = require('yargs');
 
-//CUSTOMIZE YARGS VERSION 
-yargs.version('1.1.0')
+yargs.version('1.1.0');
 
-
-//Creating add command.
 yargs.command({
     command: 'add',
     describe: 'Add a new note',
@@ -23,12 +19,10 @@ yargs.command({
         }
     },
     handler: (argv) => {
-        notes.addNote(argv.title, argv.body)
+        notes.addNote(argv.title, argv.body);
     }
-})
+});
 
-
-//Creating remove command.
 yargs.command({
     command: 'remove',
     describe: 'Remove a note',
@@ -40,12 +34,10 @@ yargs.command({
         }
     },
     handler: (argv) => {
-        notes.removeNote(argv.title)
+        notes.removeNote(argv.title);
     }
-})
+});
 
-
-//Creating list command.
 yargs.command({
     command: 'list',
     describe: 'List the notes',
@@ -55,23 +47,21 @@ yargs.command({
         type: 'string'
     },
     handler: (argv) => {
-        notes.listNotes(argv.title)
+        notes.listNotes(argv.title);
     }
-})
+});
 
-
-//Creating read command.
 yargs.command({
     command: 'read',
     describe: 'Reading the note.',
     builder: {
         describe: 'Read a specific note',
-        demandOption: true,  
+        demandOption: true,
         type: 'string'
     },
     handler: (argv) => {
-        notes.readNote(argv.title)
+        notes.readNote(argv.title);
     }
-})
+});
 
-yargs.parse()
+yargs.parse();

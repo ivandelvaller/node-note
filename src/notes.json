@@ -1,1 +1,22 @@
-[{"title":"Christmas","body":"Books, Magazines, Sweater, Pants"},{"title":"Shopping","body":"Pants and shoes"},{"title":"Shopping 2","body":"Pants, perfumes, shoes"},{"title":"Shopping 3","body":"Pants, perfumes, shoes, ham, mac"},{"title":"Safari","body":"Leon, Giraffe, Elephant"}]
+[
+    {
+        "title": "Christmas",
+        "body": "Books, Magazines, Sweater, Pants"
+    },
+    {
+        "title": "Shopping",
+        "body": "Pants and shoes"
+    },
+    {
+        "title": "Shopping 2",
+        "body": "Pants, perfumes, shoes"
+    },
+    {
+        "title": "Shopping 3",
+        "body": "Pants, perfumes, shoes, ham, mac"
+    },
+    {
+        "title": "Safari",
+        "body": "Leon, Giraffe, Elephant"
+    }
+]
